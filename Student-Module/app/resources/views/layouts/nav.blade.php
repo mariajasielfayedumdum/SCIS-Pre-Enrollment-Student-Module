@@ -1,17 +1,29 @@
-<header id="home" class="header navbar-fixed-top">
-    <div class="navbar navbar-default main-menu">
-        <div class="container">
-            <div class="collapse navbar-collapse" style="position: absolute; right: 2%; margin-top: 12%; color: black;">
-                <ul class="nav navbar-nav navbar-right" style="">
-                    <li class="active"><a href="/dashboard" ><i class="fa fa-home" id="space"></i>Home</a></li>
-                    <li><a href="/preenroll"><i class="fa fa-stack-overflow" id="space"></i>Pre-Enrollment</a></li>
-                    <li><a href="/checklist"><i class="fa fa-th-list" id="space"></i>Checklist</a></li>
-                    <li><a href="/offeredSubjects"><i class="fa fa-columns" id="space"></i>Offered Subjects</a></li>
-                    <li><a href="/overload"><i class="fa fa-folder-open-o" aria-hidden="true"></i>Request for overload</a></li>
-                    <li><a href="/petitions"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Petitions</a></li>
-                    <li><a href="/profile"><i class="fa fa-photo" aria-hidden="true"></i>Profile</a></li>
+<div id="wrapper">
+    <?php
+    use Illuminate\Support\Facades\Session;
+    $users = Session::get('username');
+    $user = DB::table('users')->where('username', '=', $users)->get();
+    ?>
+    @foreach($user as $user)
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header" style="margin-top:-1%;"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="fa fa-bars"></i></a>
+                <div class="top-left-part" ><a class="logo" href="/dashboard"><b><img src="/plugins/images/scis.png" alt="home"/></b>
+                    </a></div>
+                <span class="hidden-xs"><img src="/plugins/images/pree.png" alt="home" style="position: absolute; left: 4%; width: 140px; padding-top: 12px"/></span>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li style="position: absolute; margin-right:20%">
+                        <a class="profile-pic" href="#"> <img src="/plugins/images/users/student.png" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{$user->name}}</b> </a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li style="position: absolute; right: .5%; margin-top: 0%; margin-bottom: 1%; color: white;">
+                        <a href="/logout"><input type="button" value="Logout" style="position:relative; border-radius: 5px; color:gray"; class="btn btn-default square-btn-adjust"></a>
+                    </li>
+
                 </ul>
             </div>
-        </div>
-    </div> <!-- end of navbar -->
-</header>
+        </nav>
+    @endforeach
+</div>

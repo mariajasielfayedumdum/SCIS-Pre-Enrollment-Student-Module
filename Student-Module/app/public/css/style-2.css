@@ -1,0 +1,172 @@
+/*==========================================
+PRE LOADER
+==========================================*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.top-margin {
+    margin-top: 96px;
+}
+
+.bottom-margin {
+    margin-bottom: 96px;
+}
+
+img{max-width:100%;}
+
+a:hover{
+    text-decoration:none;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+section:nth-of-type(odd) {
+    background-color: #F9F9F9;
+}
+
+
+
+.butn {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    display: inline-block;
+    min-width: 50px;
+    padding: .9em;
+    padding: .9em;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+
+.butn:hover {
+    background-color: dodgerblue;
+    color: #fff;
+    text-decoration: none;
+}
+.center-content {
+    text-align: center;
+}
+p.description {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.white-butn{
+    max-width: 250px;
+    max-height: 50px;
+    border-radius: 50px;
+    background: #fff;
+    color: #585b60;
+}
+
+.white-butn:hover{
+    background: #e0356e;
+    color: #fff;
+    text-decoration:none;
+}
+
+.pink-butn {
+    background: #e0356e;
+    border: none;
+    margin-left: 10px;
+}
+
+.pink-butn:hover {
+
+    background-color: #f79b23;
+    color: #fff;
+    text-decoration: none;
+}
+.butn-sm{
+    width: 160px;
+    height: 38px;
+    background: #FF3366;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    padding: 6px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.butn-sm:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+.scrolldown {
+    padding-top: 24px;
+}
+
+#bgimage .scroll_butn {
+    background: url(../images/scroll.gif) 50% 50% no-repeat rgba(215, 181 ,94, 0);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    height: 45px;
+    margin: 42px auto;
+    -webkit-transition: all 500ms ease-in-out 0s;
+    -moz-transition: all 500ms ease-in-out 0s;
+    -ms-transition: all 500ms ease-in-out 0s;
+    transition: all 500ms ease-in-out 0s;
+    width: 45px;
+}
+
+#bgimage .scroll_butn:hover {
+    background: url(../images/scroll.gif) 50% 50% no-repeat #E03561;
+    opacity: .85;
+    -moz-opacity: .85;
+    -o-opacity: .85;
+    -webkit-opacity: .85;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+button {
+    width: 10px;
+    height: 5px;
+}
+.button a{
+    margin-left:20px;
+    transition:.5s;
+    opacity:1;
+}
+.button a:hover{
+    opacity:.7;
+}
+
+#dashstud {
+    position: absolute;
+    margin-top: -32%;
+    margin-left: 15%;
+    width: 100%;
+}

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Login Page</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../studcss/bootstrap.css">
-    <link rel="stylesheet" href="../studcss/main.css">
-    <link rel="stylesheet" href="../studcss/login.css">
-    <!-- Bootstrap -->
-    <link href="../studcss/bootstrap.min.css" rel="stylesheet" media="screen">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/scis.png">
+        <title>Login Page</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="../studcss/font-awesome.min.css">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
 <body>
 <div class="container">
@@ -22,7 +23,7 @@
                 {{ csrf_field() }}
                 <fieldset>
                     <div class="text-center">
-                        <img class="logoLogin" src="../images/scislogo.png">
+                        <img class="logoLogin" src="../plugins/images/scislogo.png">
                         <p class="titleLogo">School of Computing and Information Sciences</p>
                         <p class="subTitle">Pre - Enrollment System</p>
                     </div>
